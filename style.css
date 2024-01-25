@@ -1,0 +1,248 @@
+/* Preimpostazione variabili root */
+:root{
+    --main: #ececec;
+    --mypink: #c67f7f;
+    --myred: darkred;
+}
+
+/* Preimpostazione classi colore testo, background */
+.novafont{
+    font-family: 'Nova Square', sans-serif;
+}
+
+.rajfont{
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.txt-white{
+    color: var(--main);
+}
+
+.txt-pink{
+    color: var(--mypink);
+}
+
+.txt-red{
+    color: var(--myred);
+}
+
+.bgwhite{
+    background-color: var(--main);
+}
+
+.bgred{
+    background-color: var(--myred);
+}
+
+/* css navbar */
+.bgSvizzera{
+    background: url(./media/switzerland-862870_1920.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-attachment: fixed;
+}
+
+.gradient{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(236, 236, 236, 1), rgba(236, 236, 236, 0));
+}
+
+/* css header */
+.titolo{
+    font-family: 'Nova Square', sans-serif;
+    color: var(--myred);
+}
+
+.bg-custom{
+    background: url(./media/mountains2.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    z-index: 1;
+    position: relative;
+}
+
+/* css pagina2 */
+.border-bottom {
+    border-bottom: 3px solid var(--myred)!important;
+}
+
+.btn-primary {
+    --bs-btn-color: var(--main);
+    --bs-btn-bg: var(--myred);
+    --bs-btn-border-color: var(--myred);
+    --bs-btn-hover-color: var(--myred);
+    --bs-btn-hover-bg: white;
+    --bs-btn-hover-border-color: var(--myred);
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: white;
+    --bs-btn-active-bg: rgb(82, 3, 3);
+    --bs-btn-active-border-color: white;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #0d6efd;
+    --bs-btn-disabled-border-color: #0d6efd;
+}
+
+.btn{
+    border-radius: 0;
+    width: 200px;
+}
+
+.bg-alberi{
+    background-image: url(./media/trees2.png);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+}
+
+.element{
+    position: relative;
+}
+/* Pseudoelemento "pallino sul bordo rosso nella pagina 2" */
+.element::after{
+    content: " ";
+    position: absolute;
+    height: 17px;
+    width: 17px;
+    background-color: white;
+    border: 2px solid darkred;
+    border-radius: 50%;
+    top: 25px;
+    left: 107px;
+}
+
+/* css pagina 3 */
+.timeline-list{
+    text-align: left;
+    border-left: 3px solid var(--myred);
+    list-style-type: none;
+}
+
+.timeline-list li{
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.timeline-list li::after{
+    content: " ";
+    position: absolute;
+    height: 17px;
+    width: 17px;
+    background-color: white;
+    border: 2px solid darkred;
+    border-radius: 50%;
+    top: 0;
+    left: -42px;
+}
+
+.img-pini{
+    background-image: url(./media/single.png);
+    background-repeat: no-repeat;
+    background-position: 85% 100%;
+}
+
+/* css pagina 4 */
+.img-thumbnail{
+    border: 3px solid var(--myred);
+    padding: 2%;
+}
+
+.circle-white{
+    padding: 1%;
+}
+
+.bg-alberi-rossi{
+    background-image: url(./media/other.png);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+
+/* Sezione MediaQueries */
+
+/* MediaQuery small devices*/
+@media screen and (max-width:576px){
+
+    .element::after{
+        content: " ";
+        position: absolute;
+        height: 17px;
+        width: 17px;
+        background-color: white;
+        border: 2px solid darkred;
+        border-radius: 50%;
+        top: 25px;
+        left: 47%;
+    }
+
+    .bg-alberi-rossi{
+        background-image: url(./media/other.png);
+        background-position: bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 10vh;
+    }
+}
+
+/* MediaQuery medium devices*/
+@media screen and (min-width:576px) and (max-width:
+768px){
+
+    .element::after{
+        content: " ";
+        position: absolute;
+        height: 17px;
+        width: 17px;
+        background-color: white;
+        border: 2px solid darkred;
+        border-radius: 50%;
+        top: 25px;
+        left: 48%;
+    }
+}
+/* MediaQuery large devices*/
+@media screen and (min-width:768px) and (max-width:
+992px){
+
+    .element::after{
+        content: " ";
+        position: absolute;
+        height: 17px;
+        width: 17px;
+        background-color: white;
+        border: 2px solid darkred;
+        border-radius: 50%;
+        top: 49px;
+        left: 40%;
+    }
+}
+/* MediaQuery extra-large devices*/
+@media screen and (min-width:992px) and (max-width:
+1400px){
+
+    .element::after{
+        content: " ";
+        position: absolute;
+        height: 17px;
+        width: 17px;
+        background-color: white;
+        border: 2px solid darkred;
+        border-radius: 50%;
+        top: 25px;
+        left: 45%;
+    }
+}
